@@ -17,8 +17,6 @@ jobs:
           php-version: '7.2'
       - name: Checkout
         uses: actions/checkout@v2.0.0
-      - name: Install composer dependencies
-        run: composer install --no-dev -o
       - name: Clean-up project
         uses: PrestaShopCorp/github-action-clean-before-deploy@v1.0
       - name: Create & upload artifact
